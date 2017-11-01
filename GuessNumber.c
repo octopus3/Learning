@@ -45,11 +45,11 @@ int check()
 		printf("\n*****Correct*****\n");
 		return 1;
 	}
-	else if (guess<=anwser)
+	else if (guess<anwser) 		//不能写等于，这样不符合逻辑
 	{
 		printf("Too Small.\n");
 	}
-	else if (guess>=anwser)
+	else if (guess>anwser)
 	{
 		printf("Too Big.\n");
 	}
